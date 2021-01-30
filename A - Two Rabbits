@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int i,j,k,t,a,b,x,y,l;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> x >> y >> a >> b;
+    cout << (((y-x)%(a+b) == 0)?(y-x)/(a+b): -1) << "\n";
+}
+}
