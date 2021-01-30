@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int i,j,k,t,a,b,c=0;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> a >> b;
+    cout << min(max(a,2*b),max(2*a,b))*min(max(a,2*b),max(2*a,b)) << "\n";
+}
+}
