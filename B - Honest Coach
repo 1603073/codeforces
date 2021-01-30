@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int n,t,i,j,k,l,mn=100000,sm=0;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n;
+    int s[n+1];
+    for(j=1;j<=n;j++)
+       cin >> s[j];
+    sort(s+1,s+n+1);
+    for(j=1,l=j+1;l<=n;j++,l++){
+         sm = s[l]-s[j];
+         if(mn>sm)
+            mn = sm;
+    }
+    cout << mn << "\n";
+    mn = 100000,sm = 0;
+
+}
+}
