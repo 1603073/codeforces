@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int t,a,b,i,j,k,l;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> a >> b;
+    if(a%2==0 && b%2==0 && a<b)
+       printf("2\n");
+    else if(a%2==0 && b%2==0 && a>b)
+       printf("1\n");
+    else if(a%2==0 && b%2!=0 && a<b)
+       printf("1\n");
+    else if(a%2==0 && b%2!=0 && a>b)
+       printf("2\n");
+    else if(a%2!=0 && b%2==0 && a<b)
+       printf("1\n");
+    else if(a%2!=0 && b%2==0 && a>b)
+       printf("2\n");
+    else if(a%2!=0 && b%2!=0 && a<b)
+        printf("2\n");
+    else if(a%2!=0 && b%2!=0 && a>b)
+        printf("1\n");
+    else if(a==b)
+        printf("0\n");
+}
+}
