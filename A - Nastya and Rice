@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long int t,n,a,b,c,d,i,j;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n >> a >> b >> c >> d;
+    if((a-b)*n>=(c-d) && (a-b)*n<=(c+d) || (a+b)*n>=(c-d) && (a-b)*n<=(c+d))
+        printf("YES\n");
+    else
+        printf("NO\n");
+}
+}
+
+
