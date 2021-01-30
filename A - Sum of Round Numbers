@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int i,j,k,t,c=0;
+char n[10000];
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n;
+  for(long int l=0;l<strlen(n);l++){
+    if(n[l]!='0')
+      c++;
+  }
+  cout << c << "\n";
+    for(k=0;k<strlen(n);k++){
+       if(n[k]!='0'){
+         cout << n[k] ;
+    for(j=k+1;j<strlen(n);j++)
+        cout << '0';
+        cout << " ";
+    }
+    }
+    cout << "\n";
+    c = 0;
+}
+}
