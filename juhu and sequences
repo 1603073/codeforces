@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int n,f1,f2,i;
+cin >> f1 >> f2 >> n;
+long long a[6] = {f1,f2,f2-f1,-f1,-f2,f1-f2};
+if(n%6==0){
+    if((f1-f2)>0)
+        cout << (f1-f2)%1000000007 << "\n" ;
+    else{
+        if(abs(f1-f2)>1000000007)
+            cout << (1000000007*2)+(f1-f2);
+        else 
+            cout << (f1-f2)+1000000007 << "\n" ;}
+}
+else if(n%6!=0 && a[(n%6)-1]<0){
+    if(abs(a[(n%6)-1])>1000000007)
+        cout << (1000000007*2)+a[(n%6)-1];
+    else
+        cout << a[(n%6)-1]+1000000007 << "\n" ;
+    }
+else
+    cout << a[(n%6)-1]%1000000007 << "\n" ;
+}
