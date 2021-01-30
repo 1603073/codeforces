@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int i,j,n,m,k,l,d,p=0,c=0,mx=0,mn=0,c1=0,b[4+1];
+for(i=1;i<=4;i++)
+    cin >> b[i];
+cin >> d;
+sort(b+1,b+4+1);
+mn = b[1];
+mx = b[4];
+bool a[d+1];
+memset(a,true,sizeof(a));
+if(b[1]==1 || b[2]==1 || b[3]==1 || b[4]==1)
+    cout << d << "\n";
+else{
+   for(p=1; b[p]<=mx && b[p]<=d  ; p++){
+    if(a[b[p]] == true){
+        for(j=b[p];j<=d;j=j+b[p]){
+            if(a[j] == true){
+            a[j] = false;
+            c++;
+            }
+        }
+    }
+   }
+
+   cout << c << "\n";
+}
+}
