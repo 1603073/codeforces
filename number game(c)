@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int t,n,i,j=3,k,l,c=0,c1=0;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n;
+    if(n>2 && n%2==0){
+    for(j=2;j<=int(sqrt(n));j++){
+        if(j%2==0 && (n%j)==0 && (n/j)%2!=0){
+            if((n/(n/j))>2)
+            c = 3;
+            else c = 2;
+        }
+        else if(j%2!=0 && (n%j)==0 && (n/j)%2==0 && ((n/j)-1)>1){
+            c = 3;
+        }
+        }
+    if(c%2!=0 && c!=0){
+        printf("Ashishgup\n");
+        c = 0;
+    }
+    else{
+        printf("FastestFinger\n");
+        c = 0;
+    }
+    }
+    else{
+        if(n==1)
+            printf("FastestFinger\n");
+        else if(n==2)
+            printf("Ashishgup\n");
+        else if(n%2!=0 && n>2)
+            printf("Ashishgup\n");
+    }
+}
+}
