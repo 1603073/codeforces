@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int i,j,k,x,y,m,t,n,l=0,s=0,f=0,mx=0;
+char c1;
+cin>>t;
+for(i=1;i<=t;i++){
+    cin >> n >> m >> x >> y;
+    for(j=1;j<=n;j++){
+        for(k=1;k<=m;k++){
+          cin >> c1;
+          if(c1=='.'){
+            s = s+x;
+            f++;
+            if(f==2){
+                if(s>=y){
+                s = y;
+                mx = mx+s;
+                s=0,f=0;
+                }
+            else if(s<y){
+               mx = mx+s;
+               f=0;
+               s = 0;
+            }
+          }
+          else if(f==1 && k==m){
+            mx = mx+x;
+            f=0,s=0;
+          }
+          }
+          else{
+            if(f==1){
+            f = 0,s=0;
+           mx = mx+x;}
+        }
+        }
+        f=0,s=0;
+    }
+    cout << mx << "\n";
+    mx = 0,s=0,f=0;
+
+}
+}
