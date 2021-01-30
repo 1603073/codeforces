@@ -1,0 +1,11 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long t,n,i,j,k,l;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n;
+    cout << n/2 << "\n";
+
+}
+}
