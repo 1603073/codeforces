@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int i,j,t,n,k,l=1,c=0,s=0,u=0,mx=0;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n >> k;
+    long long a[n+1],b[n+1];
+    for(j=1;j<=n;j++)
+        cin >> a[j];
+    sort(a+1,a+n+1);
+    for(j=1;j<=n;j++)
+        cin >> b[j];
+    sort(b+1,b+n+1);
+    for(j=1;j<=k;j++){
+    for(l=1;l<=n;l++){
+        if(b[l]>a[j] && b[l]!= -1){
+              a[j] = b[l];
+              u = l;
+           }
+        }
+    b[u] = -1;
+    u = 0;
+    }
+    for(j=1;j<=n;j++)
+       s = s+a[j];
+    cout << s << "\n";
+    s = 0 ;
+
+}
+}
+
