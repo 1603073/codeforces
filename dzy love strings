@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+char s[1001];
+int n,i,j,k,l,w[27],mx=0,c=0;
+cin >> s >> k;
+for(i=0;i<26;i++){
+    cin >> w[i] ;
+    if(w[i]>mx){
+        mx = w[i] ;
+    }
+}
+for(i=0;i<strlen(s);i++){
+  c = c+(w[s[i]-97]*(i+1));
+}
+for(i=strlen(s);i<(strlen(s)+k);i++){
+    c = c+(mx*(i+1));
+}
+cout << c << "\n" ;
+}
