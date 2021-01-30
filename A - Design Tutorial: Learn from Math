@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int i,j,n;
+cin >> n;
+if(n%2==0)
+    cout << 8 << " " << n-8 << "\n";
+else
+    cout << (n-9) << " " << 9 << "\n";
+}
