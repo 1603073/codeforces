@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long t,a,b,i,j;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> a >> b;
+    if(abs(a-b)>min(a,b))
+        cout << min(a,b) << "\n";
+    else{
+        cout << abs(a-b)+((min(a,b)-abs(a-b))*2)/3 << "\n";
+    }
+}
+}
