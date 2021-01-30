@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int n,i,j,k,l,c=0,mx=100000,mn=0;
+cin >> n;
+long long int a,b;
+for(i=0;i<n;i++){
+    cin >> a >>b;
+    if(a<b)
+       c = 1;
+}
+if(c==1)
+     printf("Happy Alex\n");
+else printf("Poor Alex\n");
+
+}
