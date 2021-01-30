@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int n,m,i,j,k,l;
+string a,b,d;
+map<string,string>c;
+cin >> n >> m;
+while(m--){
+    cin >> a >> b;
+    c[a] = ((a.size()<=b.size())?a:b);
+}
+while(n--){
+    cin >> d;
+    cout << c[d] << " ";
+}
+}
