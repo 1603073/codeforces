@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int t,i,j,n,m;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n >> m;
+    if(n==1)
+        cout << 0 << "\n";
+    else if(n==2)
+        cout << m << "\n";
+    else
+        cout << m*2 << "\n";
+}
+}
