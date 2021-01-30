@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long t,n,x,i,j,k,c=0,s=0;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n >> x;
+    long long a[n+1];
+    for(j=1;j<=n;j++)
+        cin >> a[j];
+    sort(a+1,a+n+1);
+    for(k=n;k>=1;k--){
+       if(s+a[k]>=x){
+          s = s+a[k]-x;
+          c++;
+       }
+       }
+      cout << c << "\n";
+      s = 0,c = 0;
+}
+}
