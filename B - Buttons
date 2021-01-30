@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int n,i,j,k,t,s=0,c=0;
+cin >> n;
+for(i=n;i>=1;i--){
+    s = s+i;
+    s = s+c*(i-1);
+    c++;
+}
+cout << s << "\n";
+}
