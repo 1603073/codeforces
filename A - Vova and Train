@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int t;
+cin >> t;
+while(t--){
+    long long int L,v,r,l,c=0;
+    cin >> L >> v >> l >> r;
+    if(v == 1){
+       cout << L-(r-l)-1 << "\n";
+    }
+    else{
+        cout << (L/v)-(r/v)+(l-1)/v << "\n";
+    }
+
+}
+}
