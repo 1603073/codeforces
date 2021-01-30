@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int x,i,j,k,l,c=0,s=1;
+cin >> x;
+for(i=1*2;;i=i*2){
+if(i<=x){
+   s = i;
+}
+else if(i>x && x>0){
+x = x-s;
+i = 1;
+s = 1;
+c++;
+}
+else break;
+}
+cout << c;
+}
