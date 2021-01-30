@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int i,j,k,l,t,n,x,s=0,c=0,a,e=0,o=0;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n >> x;
+    long long a[n+1];
+    for(j=1;j<=n;j++){
+        cin >> a[j];
+        if(a[j]%2 == 0)
+           e++;
+        else
+           o++;
+    }
+    sort(a+1,a+n+1);
+    if(o == 0 || o%2 == 0 && x==n || o==n && x%2==0){
+        printf("No\n");
+        o = 0,e = 0;
+    }
+    else{
+        printf("Yes\n");
+        e = 0,o = 0;
+    }
+
+}
+}
