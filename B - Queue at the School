@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int t,n,i,j,k;
+cin >> n >> t;
+char s[n],tmp;
+cin >> s;
+for(i=0;i<t;i++){
+   for(j=0,k=j+1;k<n;){
+     if(s[j]=='B' && s[k]=='G'){
+        tmp = s[j];
+        s[j] = s[k] ;
+        s[k] = tmp;
+        j = j+2;
+        k = k+2;
+        }
+     else
+         j++,k++;
+   }
+}
+cout << s << "\n";
+}
