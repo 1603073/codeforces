@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long t,n,x,y,a,i,j,b,c;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n;
+    for(j=1;j<=n;j++){
+        cout << 2 << " " ;
+    }
+    cout << "\n";
+}
+}
