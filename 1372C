@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int t,n,i,j,k,l,c=0,c1=0,mx=0;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n;
+    long long a[n];
+    c = 0,c1 = 0,mx = 0;
+    for(j=0;j<n;j++)
+        cin >> a[j];
+    for(j=n-1;j>=0;j--){
+        if(a[j]>a[j-1])continue;
+        else break;
+        }
+     for(;j>=0;j--){
+        if(j>0 && a[j]<a[j-1])
+            c = 1;
+        if(j>0 && a[j]==j+1)
+            c1 = 1;
+        //if(c1==1 && c==1) break;
+    }
+    if(c==1 && c1!=1)cout << 1 << "\n";
+    else if(c==1 && c1==1)cout << 2 << "\n";
+    else cout << 0 << "\n";
+}
+}
