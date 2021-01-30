@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long int n,m,i,j,k,l,t,s=0,o=0,e=0;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n;
+for(j=1;j<=n;j++){
+    cin >> l;
+    if(l%2==0)e++;
+    else o++;
+    }
+if(o>=1 && e!=0 || e==0 && o%2!=0){
+    printf("YES\n");
+    o = 0,e = 0;
+}
+else{
+    printf("NO\n");
+    o = 0,e = 0;
+}
+}
+}
