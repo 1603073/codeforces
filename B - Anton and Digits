@@ -1,0 +1,9 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long t,n,x,i,j,k2,k3,k5,k6,l,mn = 0,mn1 = 0;
+cin >> k2 >> k3 >> k5 >> k6;
+mn = min(k2,k5);
+mn1 = min(mn,k6);
+cout << 256*mn1 + min(k3,k2-mn1)*32 << "\n";
+}
