@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int n,i,j,k,l,cm=0,pl=0;
+cin >> n;
+for(i=1;i<=n;i++){
+   cin >> l;
+   if(l== -1){
+      if(pl>=1){
+      pl--;
+      }
+      else
+        cm++;
+
+   }
+   else{
+      pl=pl+l;
+   }
+}
+cout << cm << "\n";
+}
