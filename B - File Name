@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int n,i,k,l,c=0,cn=0;
+cin >> n;
+char a[n];
+cin >> a;
+for(i=0;i<=n;i++){
+  if(a[i] == 'x')
+    c++;
+  else if(c>=3){
+     cn = cn+(c-2);
+     c = 0;
+     }
+  else c = 0;
+}
+if(cn == 0 && c>=3)
+    cout << c-2 << "\n";
+else
+    cout << cn << "\n";
+}
