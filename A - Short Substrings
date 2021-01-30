@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int t,n,i,j,k,l;
+char b[101],a[101];
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> b;
+    a[0] = b[0];
+   // n = strlen(b)-1;
+    for(j=1,k=2,l=1;k<=strlen(b);){
+        if(b[j] == b[k]){
+            a[l] = b[j];
+            j = j+2,k = k+2,l++;
+        }
+        else{
+            a[l] = b[j];
+            j++,k++,l++;
+        }
+
+    }
+    a[l] = b[strlen(b)];
+    cout << a << "\n";
+}
+}
