@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int n,i,j,k,l,mx,mn,s=0;
+cin >> n;
+char a[n],b[n];
+cin >> a >> b;
+for(i=0;i<n;i++){
+   mx = max(a[i],b[i]);
+   mn = min(a[i],b[i]);
+   j = (mn+10)-mx;
+   k = (mx)-mn;
+   if(j>=k)
+    s = s+k;
+   else
+    s = s+j;
+}
+cout << s << "\n";
+}
