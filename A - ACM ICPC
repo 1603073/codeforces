@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int a0,a1,a2,a3,a4,a5;
+cin >> a0 >> a1 >> a2 >> a3 >> a4 >> a5;
+if((a0+a1+a2)-(a4+a5+a3)==0)
+    cout << "YES";
+else if((a0+a1+a3)-(a2+a4+a5)==0)
+    cout << "YES";
+else if((a0+a1+a4)-(a2+a5+a3)==0)
+    cout << "YES";
+else if((a0+a1+a5)-(a2+a4+a3)==0)
+    cout << "YES";
+else if((a0+a3+a2)-(a1+a4+a5)==0)
+    cout << "YES";
+else if((a0+a4+a2)-(a1+a5+a3)==0)
+    cout << "YES";
+else if((a0+a5+a2)-(a1+a4+a3)==0)
+    cout << "YES";
+else if((a0+a3+a4)-(a2+a1+a5)==0)
+    cout << "YES";
+else if((a0+a4+a5)-(a2+a1+a3)==0)
+    cout << "YES";
+else if((a0+a3+a5)-(a2+a1+a4)==0)
+    cout << "YES";
+else
+    cout << "NO";
+}
