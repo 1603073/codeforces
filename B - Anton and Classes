@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long n,m,l1,r1,l2,r2,i,j,mn = 1000000000,mx = 0,mx1=0,mn1 = 1000000000;
+cin >> n;
+for(i=1;i<=n;i++){
+    cin >> l1 >> r1;
+    if(mn>r1)
+        mn = r1;
+    if(l1>mx)
+        mx = l1;
+    }
+cin >> m;
+for(i=1;i<=m;i++){
+    cin >> l2 >> r2;
+    if(l2>mx1)
+        mx1 = l2;
+        if(mn1>r2)
+        mn1 = r2;
+
+}
+    if((mx1-mn)>0 || (mx-mn1)>0)
+    cout << max(mx1-mn,mx-mn1);
+    else
+        cout << 0;
+}
