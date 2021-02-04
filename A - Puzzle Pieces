@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int n,m,t,i,j,k;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n >> m;
+    if(n==1||m==1||n==2 && m==2)
+        cout << "YES" << "\n";
+    else
+        cout << "NO" << "\n";
+}
+}
