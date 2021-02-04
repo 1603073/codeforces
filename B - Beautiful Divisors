@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long int n,i,j=1,c=0;
+long int a[9]={1,6,28,120,496,2016,8128,32640,130816};
+cin >> n;
+for(i=0;a[i]<=n;i++){
+ if(n%a[i]==0){
+  c++;
+  j = a[i];
+ }
+}
+cout << j;
+}
