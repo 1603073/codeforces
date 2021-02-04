@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int n,m,k,i,j,t,l,s=0;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n >> m >> k;
+    if(n/k>=m)
+       cout << m << "\n";
+    else{
+      l = (n/k);
+      m = m-l;
+      if(m%(k-1)!=0){
+        s = m/(k-1)+1;
+      }
+      else{
+        s = m/(k-1);
+      }
+     cout << l-s << "\n";
+    }
+}
+}
+
