@@ -1,0 +1,18 @@
+q = int(input())
+count = 0
+i = 0
+for i in range(q):
+     s = input()
+     t = input()
+     l = len(s)
+     for j in range(0,l):
+          if t[j] in s:
+              count+=1
+
+         
+     if count>=1:
+        print('YES')            
+        count = 0
+     else:
+        print('NO')
+        count = 0
