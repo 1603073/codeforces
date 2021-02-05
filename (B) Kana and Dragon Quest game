@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long t,n,m,x,i,j,h;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> x >> n >> m;
+    for(j=1;j<=n;j++){
+      if(x>10)
+      x = (x/2)+10;
+      else
+        break;
+    }
+    if(m*10>=x)
+      cout << "YES" << "\n";
+    else
+        cout << "NO" << "\n";
+}
+}
