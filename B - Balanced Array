@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long t,n,i,j,k,sum=0,sum1=-1,m=0,m1=0;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> n;
+    if((n/2)%2!=0)
+        cout << "NO" << "\n";
+    else{
+        cout << "YES" << "\n";
+        for(j=1;j<=n/2;j++){
+            sum = sum+2;
+            cout << sum << " ";
+            m=m+sum;
+            }
+        for(k=1;k<n/2;k++){
+            sum1 = sum1+2;
+            cout << sum1 << " ";
+            m1 = m1+sum1;
+        }
+            cout << m-m1 << "\n";
+            sum = 0,sum1 = -1,m=0,m1=0;
+        }
+}
+}
