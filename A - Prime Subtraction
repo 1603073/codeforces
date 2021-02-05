@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long x,y,i,j,t;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> x >> y;
+    if((x-y)>1)
+        cout << "YES" <<"\n";
+    else
+        cout << "NO" << "\n";
+}
+}
