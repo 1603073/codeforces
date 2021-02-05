@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr 22 19:10:43 2020
+
+@author: WIN 10
+"""
+
+for _ in range(int(input())):
+    n = int(input())
+    k = 2
+    while n%(2**k-1)!=0:
+        k=k+1
+    x = n//(2**k-1)    
+    print(x)
