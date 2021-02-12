@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long t,a,b,i,c,d;
+cin >> t;
+for(i=1;i<=t;i++){
+    cin >> a >> b;
+    if(a%b!=0){
+      c = (a/b)+1;
+      d = (b*c)-a;
+      cout << d << "\n";
+    }
+    else
+        cout << 0 << "\n";
+}
+}
