@@ -1,0 +1,10 @@
+#include <stdio.h>
+main()
+{
+    int a[5], i; long int sum=0;
+    char s[100001];
+    scanf("%d%d%d%d%s",&a[1],&a[2],&a[3],&a[4],s);
+    for(i=0;s[i]!='\0';i++)
+        sum+=a[s[i]-48];
+    printf("%ld",sum);
+}
