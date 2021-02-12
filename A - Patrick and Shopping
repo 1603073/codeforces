@@ -1,0 +1,45 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long d1,d2,d3,s=0;
+scanf("%lld %lld %lld",&d1,&d2,&d3);
+if(d1 == d2 && d2==d3)
+    printf("%lld", d1+d2+d3);
+else if(d2>=d1){
+ s = s+d1;
+ if(d1+d2>=d3){
+    s = s+d3;
+    if(d1+d3>=d2)
+     s = s+d2;
+    else
+     s = s+d1+d3;
+}
+else{
+   s = s+d1+d2;
+   if(d1+d3<d2)
+    s = s+d1+d3;
+   else
+    s = s+d2;
+}
+printf("%lld",s);
+}
+else if(d1>=d2){
+    s = s+d2;
+    if(d1+d2>=d3){
+    s = s+d3;
+    if(d3+d2>=d1)
+     s = s+d1;
+    else
+     s = s+d3+d2;
+     }
+else{
+   s = s+d2+d1;
+   if(d3+d2<=d1)
+    s = s+d3+d2;
+   else
+    s = s+d1;
+}
+   printf("%lld",s);
+
+}
+}
