@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long t,n,s;
+cin >> t;
+for(long i=1;i<=t;i++){
+    cin >> n;
+    if(n==1)
+        cout << -1 << "\n";
+    else if(n==2)
+        cout << 23 << "\n";
+    else{
+        cout<<23;
+        for(long j=1;j<=(n-2);j++)
+         cout<<9;
+         cout << "\n";
+    }
+}
+}
