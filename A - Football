@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int n,i,j,c1=1,c2=1;
+cin >> n;
+string str[n],c,d;
+for(i=0;i<n;i++)
+    cin >> str[i];
+if(n==1)
+    cout << str[0];
+else{
+for(j=0,i=1;i<n;i++){
+    if(str[j] == str[i]){
+     c1++;
+     c = str[j];
+     }
+     else
+      d = str[i];
+}
+c2 = n-c1;
+if(c1>c2)
+    cout << c;
+else
+    cout << d;
+}
+}
