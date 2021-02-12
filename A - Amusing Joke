@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Feb  9 02:03:09 2020
+
+@author: WIN 10
+"""
+
+a = input()
+
+b = input()
+ 
+c = input()
+
+d = a + b
+
+e = ''.join(sorted(d))
+
+f = ''.join(sorted(c))
+
+if(e == f):
+     print("YES")
+    
+else:
+     print("NO")
