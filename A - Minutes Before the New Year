@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int t,hr,mi,m1;
+cin >> t;
+for(int i=1;i<=t;i++){
+    cin >> hr >> mi;
+    m1 = hr*60+mi;
+    hr = (24*60)-m1;
+    cout << hr << "\n";
+}
+}
