@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int n,X=0,i;
+    char a[10];
+    scanf("%d",&n);
+    while(n--)
+    {
+        scanf("%s",a);
+        if(a[1]=='+')
+            X++;
+        else
+            X--;
+    }
+    printf("%d",X);
+}
