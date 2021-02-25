@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long int n,i,j,k,s[1000],count1=0,count2=0,c=0;
+    scanf("%ld",&n);
+    for(i=0;i<n;i++)
+        scanf("%ld",&s[i]);
+    for(j=1;j<n;j++)
+    {
+        for(k=j-1;k>=0;k--)
+        {
+            if(s[j]>s[k])
+                count1++;
+            else if(s[k]>s[j])
+                count2++;
+
+        }
+        if(count1==j || count2==j)
+          c++;
+          count1=0;
+          count2=0;
+    }
+    printf("%ld",c);
+}
