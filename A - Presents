@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int i,p,s[101],n;
+    scanf("%d",&n);
+
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d",&p);
+        s[p]=i;
+    }
+
+    for(i=1;i<=n;i++)
+        printf("%d\t",s[i]);
+
+}
