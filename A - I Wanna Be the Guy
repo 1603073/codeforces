@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,p,q,i,j,k=0,c=0,x[101],y[101];
+    scanf("%d",&n);
+    scanf("%d",&p);
+    for(i=0;i<p;i++){
+        scanf("%d",&x[i]);}
+        scanf("%d",&q);
+    for(i=0;i<q;i++)
+        scanf("%d",&y[i]);
+    for(j=1;j<=n;j++)
+    {
+       if(p>q){
+       for(k=0;k<p;k++){
+       if(j==x[k]|| j==y[k] || (j==x[k]&&j==y[k])){
+        c++;
+        break;
+       }
+        }
+       }
+      else
+      {
+         for(k=0;k<q;k++){
+         if(j==x[k]|| j==y[k] || (j==x[k]&&j==y[k])){
+         c++;
+         break;
+       }
+        }
+      }
+    }
+    if(c==n)
+        printf("I become the guy.");
+    else
+        printf("Oh, my keyboard!");
+}
