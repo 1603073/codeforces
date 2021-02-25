@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    long long int n,m,a,row,column,ans;
+    scanf("%lld %lld %lld", &n ,&m, &a);
+    row = n/a;
+    column = m/a;
+    if((n%a)!=0)
+       row++;
+    if((m%a)!=0)
+        column++;     
+        ans = row * column;
+    printf("%lld\n", ans);
+
+    return 0;
+
+
+
+
+}
