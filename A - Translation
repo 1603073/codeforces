@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+    int i,j,len1,len2;
+    char s[101],t[101];
+    scanf("%s %s",s,t);
+    strrev(t);
+    if(strcmp(s,t)==0)
+        printf("YES");
+    else
+    printf("NO");
+
+}
