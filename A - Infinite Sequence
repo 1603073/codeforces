@@ -1,0 +1,11 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long a,i,b,c;
+scanf("%lld %lld %lld",&a,&b,&c);
+if(a==b||(c!=0 && (b-a)%c==0 && (b-a)/c>0))
+        printf("YES");
+
+else
+   printf("NO");
+}
