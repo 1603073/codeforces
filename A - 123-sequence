@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    long int n,i,a,count1=0,count2=0,count3=0;
+    scanf("%ld",&n);
+
+    for(i=1;i<=n;i++)
+    {
+        scanf("%ld",&a);
+        if(a==1)
+            count1++;
+        else if(a==2)
+            count2++;
+        else if(a==3)
+            count3++;
+    }
+    if(count1>=count2 && count1>=count3)
+        printf("%ld",n-count1);
+    else if(count2>=count1 && count2>=count3)
+        printf("%ld",n-count2);
+    else if(count3>=count1 && count3>=count2)
+        printf("%ld",n-count3);
+    else if(count1==count2 && count2==count3 && count3==count1)
+        printf("%ld",n-count1);
+    else if(count1==count2 || count2==count3 || count3==count1)
+        printf("%ld",n-1);
+}
