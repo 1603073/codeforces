@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int i,j,n,m[100],c[100],m1=0,c1=0,d1=0;
+scanf("%d",&n);
+for(i=0;i<n;i++){
+    scanf("%d %d",&m[i],&c[i]);
+    if(m[i]>c[i])
+        m1++;
+    else if(m[i]<c[i])
+        c1++;
+}
+if(m1>c1&&m1>d1)
+    printf("Mishka");
+else if(c1>m1&&c1>d1)
+    printf("Chris");
+else
+    printf("Friendship is magic!^^");
+}
