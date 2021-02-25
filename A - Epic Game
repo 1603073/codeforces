@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+int gcd(int a,int n){
+int temp;
+while(n!=0){
+    temp=n;
+    n =a%n;
+    a=temp;
+}
+return a;
+}
+int gcd2(int b,int n){
+int temp1;
+while(n!=0){
+    temp1=n;
+    n =b%n;
+    b=temp1;
+}
+return b;
+}
+int main(){
+int i,a,b,j,n,count=0;
+scanf("%d %d %d",&a,&b,&n);
+for(i=1;n>0;i++){
+   if(i%2!=0){
+   n=n-gcd(a,n);}
+    else{
+     n=n-gcd2(b,n);
+    }
+    if(n==0)
+        break;
+}
+if(i%2!=0)
+    printf("0");
+else
+    printf("1");
+}
