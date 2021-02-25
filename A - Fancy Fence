@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int t,a,i,j,n,d;
+scanf("%d",&t);
+for(i=1;i<=t;i++){
+    scanf("%d",&a);
+    if(a==60||a==90||a==108||a==120||a==135||a==140||a==144||a==150||a==156||a==160||a==162||a==165||a==168||a==170||a==171||a==172||a==174||a==175||a==176||a==177||a==178||a==179)
+        printf("YES\n");
+    else
+        printf("NO\n");
+    }
+}
