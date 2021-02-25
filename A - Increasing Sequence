@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int n,i=0,count=0;
+    int d,b[1999];
+
+    scanf("%d %d",&n,&d);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&b[i]);
+    }
+    for(i=0;i<n-1;i++)
+    {
+              if(b[i]>=b[i+1]){
+                int x = ((b[i]-b[i+1])/d)+1;
+                count+=x;
+                b[i+1]=b[i+1]+x*d;
+              }
+    }
+    printf("%d",count);
+}
