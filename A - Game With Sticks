@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   int n,m,i,j,k,count=0;
+   scanf("%d %d",&n,&m);
+   if(n>m){
+    for(i=1;n>0,m>0;i++)
+    {
+        m--;
+        n--;
+        count++;
+      }
+   }
+   else if(m>n){
+    for(i=1;m>0,n>0;i++){
+         n--;
+         m--;
+        count++;
+        }
+    }
+   else if(m==n){
+     for(i=1;m>0;i++){
+        n--;
+        m--;
+        count++;
+    }
+   }
+   if(count%2==0)
+    printf("Malvika");
+   else
+    printf("Akshat");
+}
