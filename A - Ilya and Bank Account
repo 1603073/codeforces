@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long a,b,c,d,e;
+scanf("%lld",&a);
+if(a<0){
+b = a%10;
+c = a/10;
+d = c%10;
+e = c/10;
+if(abs(b)<=abs(d)){
+  if(abs(e)!=0)
+  printf("%lld%lld",e,abs(b));
+  else
+    printf("%lld",b);
+  }
+else {
+  if(abs(e)!=0)
+  printf("%lld%lld",e,abs(d));
+  else
+    printf("%lld",d);
+}
+}
+else
+    printf("%lld",a);
+}
