@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int i=2,j,a,n,k=0;
+char s[100],temp;
+scanf("%d",&n);
+scanf("%s",s);
+for(i=2;i<=n;i++){
+   if(n%i==0){
+   for(a=i-1,k=0;k<=a;a--,k++){
+    temp=s[k];
+    s[k]=s[a];
+    s[a]=temp;
+   }
+   }
+}
+printf("%s",s);
+}
