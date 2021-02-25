@@ -1,0 +1,18 @@
+ #include<bits/stdc++.h>
+ #include<cstring>
+ using namespace std;
+ int main(){
+ int i,count=0;
+ char s[101],s1[]="hello";
+ scanf("%s",s);
+ int j = strlen(s);
+ for(i=0;s[i]!='\0';i++){
+    if(s1[count]==s[i]){
+        count++;
+        }
+}
+if(count==5)
+   printf("YES");
+   else
+    printf("NO");
+ }
