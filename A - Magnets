@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() 
+{
+	int cont=0, n, i;
+	scanf ("%d", &n);
+	int arr[n+1];
+	for (i=0; i<n; i++){
+		scanf("%d", &arr[i]);
+	}
+	for (i=0; i<n; i++){
+		if(arr[i]!=arr[i+1])
+			cont++;
+	}
+	printf ("%d", cont);
+	return 0;
+}
