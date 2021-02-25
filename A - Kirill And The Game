@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int l,r,x,y,i,j,k,c=0;
+scanf("%lld %lld %lld %lld %lld",&l,&r,&x,&y,&k);
+for(i=x;i<=y;i++){
+    if(k*i>=l && k*i<=r){
+        printf("YES");
+        c++;
+        break;
+        }
+}
+if(c==0)
+    printf("NO");
+}
