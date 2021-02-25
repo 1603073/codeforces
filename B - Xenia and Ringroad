@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+long long int n,m,a=1,x,i,j=1,t=0;
+scanf("%lld %lld",&n,&m);
+for(i=1;i<=m;i++){
+scanf("%lld",&x);
+if(x>=a){
+  t=t+(x-a);
+  a=x;
+}
+else{
+  t=t+(n-a)+x;
+  a=x;
+}
+}
+printf("%lld",t);
+}
