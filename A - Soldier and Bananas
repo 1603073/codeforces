@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+     long int k,n,w;
+     long int i,cost=0,t;
+     long int borrow;
+     scanf("%ld %ld %ld",&k,&n,&w);
+
+    for(i=1;i<=w;i++)
+    {
+        t = i*k;
+        cost = cost + t;
+    }
+
+   borrow = cost - n;
+   if(borrow>0)
+   {
+       printf("%d\n", borrow);
+   }
+   
+   else
+   {
+       printf("0\n");
+   }
+   
+   return 0;
+}
