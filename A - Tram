@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+   int i,n,a,b,max=0,s=0;
+   scanf("%d",&n);
+
+   for(i=0;i<n;i++)
+   {
+       scanf("%d %d",&a,&b);
+       s=b-a+s;
+       if(s>max){
+        max=s;}
+   }
+   printf("%d",max);
+}
