@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char s[101];
+    gets(s);
+    if(strstr(s,"H") || strstr(s,"Q") || strstr(s,"9"))
+        printf("YES");
+    else
+        printf("NO");
+}
