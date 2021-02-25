@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int i,j=1,n,m,k,Day=0;
+    scanf("%d %d",&n,&m);
+    k=m;
+    for(i=1;n>0;i++)
+    {
+        if(i==k)
+        {
+            Day++;
+            j++;
+            k=j*m;
+        }
+        else{
+            Day++;
+            n--;
+        }
+    }
+    printf("%d",Day);
+}
