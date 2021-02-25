@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int i,j,n,k,sum=0,s=0,count=0;
+scanf("%d %d",&n,&k);
+for(i=1;i<=n;i++){
+  sum=sum+(5*i);
+  s=sum+k+1200;
+  if(s<1440||s==1440)
+        count++;
+   else
+    break;
+}
+printf("%d",count);
+}
