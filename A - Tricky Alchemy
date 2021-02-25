@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long int a,b,x,y,z,i,j;
+scanf("%I64d %I64d",&a,&b);
+scanf("%I64d %I64d %I64d",&x,&y,&z);
+i=(x*2+y*1)-a;
+j=(y*1+z*3)-b;
+if(j<0)
+  j=0;
+if(i<0)
+  i=0;
+printf("%I64d",i+j);
+}
