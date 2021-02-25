@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,m,i,j,count=0,flag=0;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=3;j++)
+        {
+            scanf("%d",&m);
+            if(m==1)
+                count++;
+        }
+        if(count==2||count>2)
+            flag++;
+        count=0;
+    }
+    printf("%d",flag);
+}
