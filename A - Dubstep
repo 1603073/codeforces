@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	int l,i;
+	char s[202];
+	gets(s);
+	l=strlen(s);
+	for(i=0;i<l;i++)
+	{
+	if(s[i]=='W'&&s[i+1]=='U'&&s[i+2]=='B')
+	{
+    	printf(" ");
+		i=i+2;
+	}
+	else
+	printf("%c",s[i]);
+	}
+}
