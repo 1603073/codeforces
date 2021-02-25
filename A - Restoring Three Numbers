@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long int x1,x2,x3,x4,i,j,k,l;
+scanf("%ld %ld %ld %ld",&x1,&x2,&x3,&x4);
+if(x1>x2 && x1>x3 && x1>x4)
+    i = x1;
+else if(x2>x1 && x2>x3 && x2>x4)
+    i = x2;
+else if(x3>x1 && x3>x2 && x3>x4)
+    i = x3;
+else
+    i = x4;
+if(i==x1){
+    j = i-x2;
+    k = i-x3;
+    l = i-x4;
+}
+else if(i==x2){
+    j = i-x1;
+    k = i-x3;
+    l = i-x4;
+}
+else if(i==x3){
+    j = i-x1;
+    k = i-x2;
+    l = i-x4;
+}
+else if(i==x4){
+    j = i-x1;
+    k = i-x2;
+    l = i-x3;
+}
+printf("%ld %ld %ld",j,k,l);
+}
