@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+#include<math.h>
+using namespace std;
+int main(){
+int i,n,p[100];
+double v=0.0;
+scanf("%d",&n);
+for(i=0;i<n;i++){
+    scanf("%d",&p[i]);
+    p[i]=p[i]*1.0;
+    v=v+p[i];
+}
+printf("%0.12lf",v/n);
+}
