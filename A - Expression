@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,i,j,k,l,m;
+    scanf("%d %d %d",&a,&b,&c);
+    i = (a+b)*c;
+    j =  a+(b*c);
+    k =  a*(b+c);
+    l =  a*b*c;
+    m =  a+b+c;
+
+    if(i>=j && i>=k && i>=l && i>=m)
+        printf("%d",i);
+    else if(j>=i && j>=k && j>=l && j>=m)
+        printf("%d",j);
+    else if(k>=i && k>=j && k>=l && k>=m)
+        printf("%d",k);
+    else if(l>=i && l>=j && l>=k && l>=m )
+        printf("%d",l);
+     else
+        printf("%d",m);
+
+}
