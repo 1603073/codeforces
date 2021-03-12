@@ -1,0 +1,17 @@
+import math
+
+t = int(input())
+for i in range(t):
+    a, b = map(int, input().split())
+    if a == b:
+        print(0)
+    elif a > b:
+        if((a-b) % 10 != 0):
+            print(math.ceil((a-b)/10))
+        else:
+            print(math.floor((a-b)/10))
+    else:
+        if((b-a) % 10 != 0):
+            print(math.ceil((b-a)/10))
+        else:
+            print(math.floor((b-a)/10))
