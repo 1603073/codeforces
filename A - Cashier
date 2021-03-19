@@ -1,0 +1,28 @@
+import math
+n, L, a = map(int, input().split())
+br = 0
+c = 0
+for i in range(n):
+    t, l = map(int, input().split())
+    if i == 0:
+        if (t-a) >= 0:
+            br = br+(math.floor(t/a))
+            L = L-(t+l)
+            c = l+t
+        else:
+            L = L-(t+l)
+            c = l+t
+    else:
+        if(t-c) >= a:
+            br = br+(math.floor((t-c)/a))
+            L = L-(t-c+l)
+        elif t == c:
+            L = L-(l)
+        else:
+            L = L-(l+t-c)
+        c = l+t
+
+if(L >= a):
+    print(br+math.floor((L/a)))
+else:
+    print(br)
